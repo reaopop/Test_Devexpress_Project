@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPOS", "TestPOS\TestPOS.csproj", "{40EE4AB8-3A86-4BA5-81CB-D749CE222B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPOS.DBContext", "TestPOS.DBContext\TestPOS.DBContext.csproj", "{7915DC40-5F5B-4F07-97F8-68839C8534D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40EE4AB8-3A86-4BA5-81CB-D749CE222B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EE4AB8-3A86-4BA5-81CB-D749CE222B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EE4AB8-3A86-4BA5-81CB-D749CE222B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EE4AB8-3A86-4BA5-81CB-D749CE222B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7915DC40-5F5B-4F07-97F8-68839C8534D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7915DC40-5F5B-4F07-97F8-68839C8534D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7915DC40-5F5B-4F07-97F8-68839C8534D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7915DC40-5F5B-4F07-97F8-68839C8534D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2D79248-B1EF-437A-8C3F-313242C3EE57}
+	EndGlobalSection
+EndGlobal
