@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -54,7 +53,7 @@ namespace TestPOS.DBContext.Services
                 {
                     // Reading Response.  
                     string result = response.Content.ReadAsStringAsync().Result;
-                    responseObj = JsonConvert.DeserializeObject<DataTable>(result);
+                    //responseObj = JsonConvert.DeserializeObject<DataTable>(result);
                 }
             }
 

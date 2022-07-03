@@ -2,24 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using TestPOS.DBContext.Services;
 using TestPOS.DBContext.Models;
+using TestPOS.Logic.Presenters;
+using TestPOS.Views.Interfaces;
 
 namespace TestPOS.Views.Forms
 {
-    public partial class Dashboard : DevExpress.XtraEditors.XtraForm
+    public partial class Dashboard : DevExpress.XtraEditors.XtraForm,IDashboard
     {
+
+        #region Properties
+        public object DataSource { get => gridControl1.DataSource; set => gridControl1.DataSource = value; }
+        DashboardPresneter dashboardPresneter;
+
+        #endregion
         public Dashboard()
         {
             InitializeComponent();
-            DBHelper. GetData<JsonData>();
+            dashboardPresneter = new DashboardPresneter(this);
+
         }
+
+
         private void tileBar_SelectedItemChanged(object sender, TileItemEventArgs e)
         {
             navigationFrame.SelectedPageIndex = tileBarGroupTables.Items.IndexOf(e.Item);
