@@ -15,6 +15,8 @@ namespace TestPOS.Views.Forms
 
         #region Properties
         public object DataSource { get => gridControl1.DataSource; set => gridControl1.DataSource = value; }
+        public object DataSource_Suppliers { get => gridControl_Suppliers.DataSource; set => gridControl_Suppliers.DataSource = value; }
+
         DashboardPresneter dashboardPresneter;
 
         #endregion

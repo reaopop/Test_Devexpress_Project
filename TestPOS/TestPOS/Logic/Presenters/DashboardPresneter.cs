@@ -39,6 +39,16 @@ namespace TestPOS.Logic.Presenters
                                                UnitePrice = item.UnitPrice,
                                            }).ToList();
 
+                repo.DataSource_Suppliers = (from item in db.Suppliers.DefaultIfEmpty()
+                                   select new
+                                   {
+                                       SupplierID = item.SupplierID,
+                                       CompanyName = item.CompanyName,
+                                       ContactName = item.ContactName,
+                                       ContactTitle = item.ContactTitle,
+                                       Country = item.Country,
+                                   }).ToList();
+
             }
         }
         #endregion

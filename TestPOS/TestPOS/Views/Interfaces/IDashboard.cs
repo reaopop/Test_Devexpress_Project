@@ -9,5 +9,6 @@ namespace TestPOS.Views.Interfaces
     public interface IDashboard
     {
         object DataSource { get; set; }
+        object DataSource_Suppliers { get; set; }
     }
 }
